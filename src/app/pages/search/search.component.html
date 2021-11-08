@@ -1,0 +1,24 @@
+<section>
+  <div>
+    <h4 class="mb-4 text-muted titulo">Informe o CPF do futuro cooperado (a)</h4>
+    <h6 class="mb-4 text-muted subtitulo">Se necessário você poderá duplicar uma conta existente ou retornar este cadastro futuramente</h6>
+    <h6 class="mb-4 text-muted subtitulo">Digite apenas os números (sem pontos ou traços</h6>
+  </div>
+
+  <div class="row">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="formDisplay">
+      <div class="form-group organizacaoSearch form-group" id="cpfDiv">
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" class="form-control rounded-0 inputSearch" id="cpf" formControlName="cpf" mask="000.000.000-00" placeholder="000.000.000-00" required (keyup)="verifyButton()"/>
+          <mat-error *ngIf="!validacaoCpf">Informe um CPF válido</mat-error>
+      </div>
+      <div>
+        <button type="button" class="btn btn-lightning rounded-0 botaoSearch" (click)="onSubmit()" [disabled]="desabilitado">Consultar por CPF</button>
+      </div>
+    </form>
+  </div>
+</section>
+  <hr *ngIf="cpfValido">
+  <section *ngIf="cpfValido" class="class-section">
+      <app-card [nomeUsuario]="dadosUsuario.nomeUsuario" [situacaoCpf]="dadosUsuario.situacaoCpf" class="organizacao" [contaAplicacao]="dadosUsuario.contaAplicacao" [contaCorrente]="dadosUsuario.contaCorrente"></app-card>
+  </section>

@@ -1,0 +1,44 @@
+.organizacaoSearch {
+    display: inline-block;
+}
+
+.botaoSearch {
+    margin-left: 10%;
+    background-color: #165C7D;
+    margin-top: 13%;
+    height: 35px;
+    width: 145px;
+}
+
+.inputSearch {
+}
+
+.class-section {
+    // display: flex;
+}
+
+.organizacao {
+    display: flex;
+}
+
+.green-border {
+    border: 5px solid green !important;  
+  }
+
+.titulo {
+    font-size: 25px;
+    margin-bottom: none;
+}
+
+.subtitulo {
+    margin-top: -2%;
+    font-size: 12px;
+}
+
+.has-error {
+    border: 1px solid red;
+}
+
+.formDisplay {
+    display: flex;
+}

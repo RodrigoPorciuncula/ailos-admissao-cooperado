@@ -1,0 +1,48 @@
+<aside class="sidebar shadow-sm">
+    <div class="sidebar-search pt-1 pb-1 pl-3 pr-3">
+      <input type="search" class="form-control rounded-pill" name="search" placeholder="Search ...">
+    </div>
+    <nav class="sidebar-menu pt-3 pb-3">
+      <ul class="menu-items">
+        <li class="nav-item navicon">
+          <a class="btn nav-link" (click)="toggleSidebarPin()"><i class="fa fa-bars"></i></a>
+        </li>
+        <li >
+          <a href="#" routerLink="/search" routerLinkActive="active">
+            <i class="fa fa-search"></i>
+            <span>Procurar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" routerLink="/home" routerLinkActive="active">
+            <i class="fa fa-home"></i>
+            <span>Início</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" routerLink="/favorite" routerLinkActive="active">
+            <i class="fa fa-star"></i>
+            <span>Favoritos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" routerLink="/comments" routerLinkActive="active">
+            <i class="fa fa-comment-dots"></i>
+            <span>Comentários</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" routerLink="/adjust" routerLinkActive="active">
+            <i class="fa fa-globe"></i>
+            <span>Ajustes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" routerLink="/notifications" routerLinkActive="active">
+            <i class="fas fa-bell"></i>
+            <span>Notifications</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>

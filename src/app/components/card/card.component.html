@@ -1,0 +1,59 @@
+<!-- Cards with media area -->
+<mat-card class="class-card" style="width: 23%;">
+    <mat-card-title-group>
+      <mat-card-title class="title">Situação cadastral do CPF</mat-card-title>
+      <mat-card-subtitle class="subtitle">Consulta na Receita Federal</mat-card-subtitle>
+      <!-- <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > -->
+    </mat-card-title-group>
+    <div class="div-class">
+        <i class="fas fa-user-alt edit-color"></i>
+        <span class="separator">Nome</span>
+        <div class="espacamento">
+            <span class="span-class">{{nomeUsuario}}</span>
+        </div>
+    </div>
+    <br/>
+    <mat-card-content class="div-class">
+        <i class="fa fa-check edit-colors" aria-hidden="true"></i>
+        <span class="separator">Situacao do CPF</span>
+        <div class="espacamento">
+            <span class="span-class2">{{situacaoCpf}}</span>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="class-card class-card-separator" style="width: 23%;">
+    <mat-card-title-group>
+      <mat-card-title class="title">Conta aplicação</mat-card-title>
+      <mat-card-subtitle class="subtitle">Cooperativa Viacredi</mat-card-subtitle>
+    </mat-card-title-group>
+    <div class="div-class">
+        <i class="fa fa-credit-card edit-color" aria-hidden="true"></i>
+        <span class="separator">Número da conta</span>
+        <div class="espacamento">
+            <span class="span-class3">{{contaAplicacao}}</span>
+        </div>
+    </div>
+    <br/>
+    <mat-card-content class="div-class">
+        <a href="">Duplicar conta</a>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="class-card class-card-separator" style="width: 23%;">
+    <mat-card-title-group>
+      <mat-card-title class="title">Conta corrente</mat-card-title>
+      <mat-card-subtitle class="subtitle">Cooperativa Viacredi</mat-card-subtitle>
+    </mat-card-title-group>
+    <div class="div-class">
+        <i class="fa fa-credit-card edit-color" aria-hidden="true"></i>
+        <span class="separator">Número da conta</span>
+        <div class="espacamento">
+            <span class="span-class3">{{contaCorrente}}</span>
+        </div>
+    </div>
+    <br/>
+    <mat-card-content class="div-class">
+        <a href="">Duplicar conta</a>
+    </mat-card-content>
+</mat-card>
